@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{text-align: center;
+            color: cornflowerblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+        }
+        h3{
+            text-align: center;
+            color: cornflowerblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <h1 id="demo">Testing the <mark>vidoe</mark> and <mark>audio</mark>tag</h1>
+    <h3>The Video Tag</h3>
+    <script>
+        document.getElementById('demo').innerHTML="Hello viewers";
+    </script>
+    <video id="myvideo" src="video1.mp4" controls>Sorry your browser doesn't support this video</video>
+    <h3>The Audio Tag</h3>
+    <audio id="myaudio" src="audio.mpeg" controls>Sorry your browser does not support this video</audio>
+    <div>
+        <button onclick="document.getElementById('myaudio').play()">Play</button>
+        <button onclick="document.getElementById('myaudio').pause()">Pause</button>
+        <button onclick="document.getElementById('myaudio').volume+=0.05">+volume</button>
+        <button onclick="document.getElementById('myaudio').volume-=0.05">-volume</button>
+    </div>
+     <script>
+        var v =document.getElementById('myvideo');
+        v.play;
+    </script>
+</body>
+</html>
